@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/yajie_ws/ex_250_campus/src
+CMAKE_SOURCE_DIR = /home/lee/workspace/ROS_ws/ex_250_campus/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/yajie_ws/ex_250_campus/build
+CMAKE_BINARY_DIR = /home/lee/workspace/ROS_ws/ex_250_campus/build
 
 # Utility rule file for actionlib_generate_messages_py.
 
@@ -63,10 +63,10 @@ demo/CMakeFiles/actionlib_generate_messages_py.dir/build: actionlib_generate_mes
 .PHONY : demo/CMakeFiles/actionlib_generate_messages_py.dir/build
 
 demo/CMakeFiles/actionlib_generate_messages_py.dir/clean:
-	cd /home/ubuntu/yajie_ws/ex_250_campus/build/demo && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build/demo && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : demo/CMakeFiles/actionlib_generate_messages_py.dir/clean
 
 demo/CMakeFiles/actionlib_generate_messages_py.dir/depend:
-	cd /home/ubuntu/yajie_ws/ex_250_campus/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/yajie_ws/ex_250_campus/src /home/ubuntu/yajie_ws/ex_250_campus/src/demo /home/ubuntu/yajie_ws/ex_250_campus/build /home/ubuntu/yajie_ws/ex_250_campus/build/demo /home/ubuntu/yajie_ws/ex_250_campus/build/demo/CMakeFiles/actionlib_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lee/workspace/ROS_ws/ex_250_campus/src /home/lee/workspace/ROS_ws/ex_250_campus/src/demo /home/lee/workspace/ROS_ws/ex_250_campus/build /home/lee/workspace/ROS_ws/ex_250_campus/build/demo /home/lee/workspace/ROS_ws/ex_250_campus/build/demo/CMakeFiles/actionlib_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : demo/CMakeFiles/actionlib_generate_messages_py.dir/depend
 

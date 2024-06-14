@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/yajie_ws/ex_250_campus/src/demo/src/topic_tool.cpp" "/home/ubuntu/yajie_ws/ex_250_campus/build/demo/CMakeFiles/topic_tool.dir/src/topic_tool.cpp.o"
+  "/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/src/topic_tool.cpp" "/home/lee/workspace/ROS_ws/ex_250_campus/build/demo/CMakeFiles/topic_tool.dir/src/topic_tool.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ubuntu/yajie_ws/ex_250_campus/src/demo/include"
+  "/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"

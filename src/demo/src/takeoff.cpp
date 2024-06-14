@@ -1,15 +1,9 @@
 #include "takeoff.h"
 
 
-Takeoff::Takeoff(ros::NodeHandle nh,int UAV_ID){
-    ros::NodeHandle NH = nh;
-    MAV_ID = UAV_ID;
-}
-
-
-void Takeoff::MAV_takeoff()
-{
+Takeoff::Takeoff(ros::NodeHandle *nh,int UAV_ID){
     
+    MAV_ID = UAV_ID;
     mavlink_topic = std::string("/MAV") + std::to_string(MAV_ID) + std::string("/mavlink/to");
     arm_clint = std::string("/MAV") + std::to_string(MAV_ID) + std::string("mavros/cmd/arming");
     setmode_clint = std::string("/MAV") + std::to_string(MAV_ID) + std::string("mavros/set_mode");
@@ -17,15 +11,18 @@ void Takeoff::MAV_takeoff()
     position_topic = std::string("/MAV") + std::to_string(MAV_ID) + std::string("mavros/setpoint_position/local");
     state_topic = std::string("/MAV") + std::to_string(MAV_ID) + std::string("mavros/state");
 
-    wake_pub = NH.advertise<geometry_msgs::PoseStamped>(position_topic, 10); 
-    takeoff_cl = NH.serviceClient<mavros_msgs::CommandTOL>(takeoff_clint);
-    arming_client = NH.serviceClient<mavros_msgs::CommandBool>(arm_clint);
-    set_mode_client = NH.serviceClient<mavros_msgs::SetMode>(setmode_clint);
-    state_sub = NH->subscribe<mavros_msgs::State>(state_topic, 10, &Takeoff::state_cb,this);
+    wake_pub = nh->advertise<geometry_msgs::PoseStamped>(position_topic, 10); 
+    takeoff_cl = nh->serviceClient<mavros_msgs::CommandBool>(arm_clint);
+    set_mode_client = nh->serviceClient<mavros_msgs::SetMode>(setmode_clint);
+    state_sub = nh->subscribe(state_topic, 10, &Takeoff::state_cb,this);
     
     ros::topic::waitForMessage<mavros_msgs::Mavlink>(mavlink_topic);
     ROS_INFO("Message received or timeout reached. Continuing execution.");
-    
+}
+
+
+void Takeoff::MAV_takeoff()
+{
     home();
     start();
     set_mode();   
@@ -68,9 +65,15 @@ void Takeoff::start(void){
 
 void Takeoff::set_mode(void){
     offb_set_mode.request.custom_mode = "GUIDED";
-    if( set_mode_client.call(offb_set_mode) && offb_set_mode.response.mode_sent) {
+    ros::Rate rate_arm(10);
+    for(int i = 10; ros::ok() && i > 0; --i){
+        if( set_mode_client.call(offb_set_mode) && offb_set_mode.response.mode_sent) {
         ROS_ERROR("GUIDED enabled");
+        }
+        ros::spinOnce();
+        rate_arm.sleep();
     }
+
 }
 
 void Takeoff::arm(void){
@@ -94,7 +97,7 @@ void Takeoff::takeoff(void){
 }
 
 
-void state_cb(const mavros_msgs::State::ConstPtr& msg){
+void Takeoff::state_cb(const mavros_msgs::State::ConstPtr& msg){
 
 	current_state = *msg;
 }

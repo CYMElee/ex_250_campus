@@ -16,7 +16,7 @@ int main(int argv,char** argc)
     ros::NodeHandle nh;
     int UAV_ID = 1;
     
-    Takeoff takeoff(nh,UAV_ID);
+    Takeoff takeoff(&nh,UAV_ID);
     takeoff.MAV_takeoff();
 
     ros::Rate rate(100.0);

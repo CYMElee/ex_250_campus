@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ubuntu/yajie_ws/ex_250_campus/devel/lib/demo/fly"
-  "/home/ubuntu/yajie_ws/ex_250_campus/devel/lib/demo/fly.pdb"
+  "/home/lee/workspace/ROS_ws/ex_250_campus/devel/lib/demo/fly"
+  "/home/lee/workspace/ROS_ws/ex_250_campus/devel/lib/demo/fly.pdb"
   "CMakeFiles/fly.dir/node/fly.cpp.o"
   "CMakeFiles/fly.dir/src/takeoff.cpp.o"
 )

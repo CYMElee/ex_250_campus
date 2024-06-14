@@ -27,7 +27,6 @@ class Takeoff{
 	mavros_msgs::State current_state;
 
         int MAV_ID;
-        ros::NodeHandle NH;
         std::string mavlink_topic,arm_clint,takeoff_clint,position_topic,setmode_clint,state_topic;
         /*take off*/
         void home(void);
@@ -35,12 +34,12 @@ class Takeoff{
         void set_mode(void);
         void arm(void);
         void takeoff(void);
-      //  void state_cb(const mavros_msgs::State::ConstPtr& msg);
+        void state_cb(const mavros_msgs::State::ConstPtr& msg);
 
     public:
       void MAV_takeoff(void);
       void MAV_land(void);
-      Takeoff(ros::NodeHandle nh,int UAV_ID);
+      Takeoff(ros::NodeHandle *nh,int UAV_ID);
 
 };
 
