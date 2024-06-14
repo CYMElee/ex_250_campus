@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/include/takeoff.h
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/include/takeoff.h
 ros/ros.h
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/include/ros/ros.h
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/include/ros/ros.h
 string
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/include/string
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/include/string
 geometry_msgs/PoseStamped.h
 -
 mavros_msgs/CommandBool.h
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/include/mavros_msgs/CommandBool.h
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/include/mavros_msgs/CommandBool.h
 mavros_msgs/CommandTOL.h
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/include/mavros_msgs/CommandTOL.h
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/include/mavros_msgs/CommandTOL.h
 mavros_msgs/SetMode.h
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/include/mavros_msgs/SetMode.h
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/include/mavros_msgs/SetMode.h
 mavros_msgs/State.h
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/include/mavros_msgs/State.h
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/include/mavros_msgs/State.h
 mavros_msgs/Mavlink.h
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/include/mavros_msgs/Mavlink.h
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/include/mavros_msgs/Mavlink.h
 
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/node/fly.cpp
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/node/fly.cpp
 ros/ros.h
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/node/ros/ros.h
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/node/ros/ros.h
 string
 -
 geometry_msgs/PoseStamped.h
@@ -42,11 +42,11 @@ mavros_msgs/State.h
 mavros_msgs/Mavlink.h
 -
 takeoff.h
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/node/takeoff.h
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/node/takeoff.h
 
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/src/takeoff.cpp
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/src/takeoff.cpp
 takeoff.h
-/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/src/takeoff.h
+/home/ubuntu/yajie_ws/ex_250_campus/src/demo/src/takeoff.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lee/workspace/ROS_ws/ex_250_campus/src
+CMAKE_SOURCE_DIR = /home/ubuntu/yajie_ws/ex_250_campus/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lee/workspace/ROS_ws/ex_250_campus/build
+CMAKE_BINARY_DIR = /home/ubuntu/yajie_ws/ex_250_campus/build
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lee/workspace/ROS_ws/ex_250_campus/src /home/lee/workspace/ROS_ws/ex_250_campus/src /home/lee/workspace/ROS_ws/ex_250_campus/build /home/lee/workspace/ROS_ws/ex_250_campus/build /home/lee/workspace/ROS_ws/ex_250_campus/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/yajie_ws/ex_250_campus/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/yajie_ws/ex_250_campus/src /home/ubuntu/yajie_ws/ex_250_campus/src /home/ubuntu/yajie_ws/ex_250_campus/build /home/ubuntu/yajie_ws/ex_250_campus/build /home/ubuntu/yajie_ws/ex_250_campus/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

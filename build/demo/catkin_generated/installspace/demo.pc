@@ -1,4 +1,4 @@
-prefix=/home/lee/workspace/ROS_ws/ex_250_campus/install
+prefix=/home/ubuntu/yajie_ws/ex_250_campus/install
 
 Name: demo
 Description: Description of demo

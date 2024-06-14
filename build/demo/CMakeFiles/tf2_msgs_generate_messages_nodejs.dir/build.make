@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lee/workspace/ROS_ws/ex_250_campus/src
+CMAKE_SOURCE_DIR = /home/ubuntu/yajie_ws/ex_250_campus/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lee/workspace/ROS_ws/ex_250_campus/build
+CMAKE_BINARY_DIR = /home/ubuntu/yajie_ws/ex_250_campus/build
 
 # Utility rule file for tf2_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ demo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build: tf2_msgs_generate_m
 .PHONY : demo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 
 demo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/lee/workspace/ROS_ws/ex_250_campus/build/demo && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/ubuntu/yajie_ws/ex_250_campus/build/demo && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : demo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
 
 demo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lee/workspace/ROS_ws/ex_250_campus/src /home/lee/workspace/ROS_ws/ex_250_campus/src/demo /home/lee/workspace/ROS_ws/ex_250_campus/build /home/lee/workspace/ROS_ws/ex_250_campus/build/demo /home/lee/workspace/ROS_ws/ex_250_campus/build/demo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/yajie_ws/ex_250_campus/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/yajie_ws/ex_250_campus/src /home/ubuntu/yajie_ws/ex_250_campus/src/demo /home/ubuntu/yajie_ws/ex_250_campus/build /home/ubuntu/yajie_ws/ex_250_campus/build/demo /home/ubuntu/yajie_ws/ex_250_campus/build/demo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : demo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/depend
 
