@@ -749,6 +749,33 @@ node/fly.cpp.s:
 	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/node/fly.cpp.s
 .PHONY : node/fly.cpp.s
 
+src/takeoff.o: src/takeoff.cpp.o
+
+.PHONY : src/takeoff.o
+
+# target to build an object file
+src/takeoff.cpp.o:
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/src/takeoff.cpp.o
+.PHONY : src/takeoff.cpp.o
+
+src/takeoff.i: src/takeoff.cpp.i
+
+.PHONY : src/takeoff.i
+
+# target to preprocess a source file
+src/takeoff.cpp.i:
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/src/takeoff.cpp.i
+.PHONY : src/takeoff.cpp.i
+
+src/takeoff.s: src/takeoff.cpp.s
+
+.PHONY : src/takeoff.s
+
+# target to generate assembly for a file
+src/takeoff.cpp.s:
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/src/takeoff.cpp.s
+.PHONY : src/takeoff.cpp.s
+
 src/topic_tool.o: src/topic_tool.cpp.o
 
 .PHONY : src/topic_tool.o
@@ -829,6 +856,9 @@ help:
 	@echo "... node/fly.o"
 	@echo "... node/fly.i"
 	@echo "... node/fly.s"
+	@echo "... src/takeoff.o"
+	@echo "... src/takeoff.i"
+	@echo "... src/takeoff.s"
 	@echo "... src/topic_tool.o"
 	@echo "... src/topic_tool.i"
 	@echo "... src/topic_tool.s"

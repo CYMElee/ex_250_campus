@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/lee/workspace/ROS_ws/2024_Robot_Final_Project/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/lee/workspace/ROS_ws/2024_Robot_Final_Project/src/apriltag_ros/include/**",
+        "/home/lee/workspace/ROS_ws/ex_250_campus/src/demo/include/**",
+        "/home/lee/workspace/ROS_ws/2024_Robot_Final_Project/src/Task_1/include/**",
+        "/home/lee/workspace/ROS_ws/2024_Robot_Final_Project/src/Task_2/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
