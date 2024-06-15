@@ -47,7 +47,6 @@ void Takeoff::home(void){
 	  }	
     ros::topic::waitForMessage<mavros_msgs::Mavlink>(mavlink_topic);
     ROS_ERROR("Set Origion Position");
-    sleep(2);
 }
 
 void Takeoff::start(void){
@@ -65,7 +64,7 @@ void Takeoff::start(void){
 
 void Takeoff::set_mode(void){
     offb_set_mode.request.custom_mode = "GUIDED";
-    ros::Rate rate_arm(10);
+    ros::Rate rate_arm(3);
     for(int i = 10; ros::ok() && i > 0; --i){
         if( set_mode_client.call(offb_set_mode) && offb_set_mode.response.mode_sent) {
         ROS_ERROR("GUIDED enabled");
