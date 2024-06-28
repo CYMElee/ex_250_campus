@@ -14,31 +14,25 @@ class Takeoff{
 
     private:
         ros::Publisher wake_pub; /*sent data before start*/
-        ros::ServiceClient takeoff_cl;/*take off client*/
-        ros::ServiceClient arming_client; /*arming client */
-        ros::ServiceClient set_mode_client; /*set mode client*/
+        ros::ServiceClient takeoff;/*take off client*/
+        ros::ServiceClient arm; /*arming client */
+        ros::ServiceClient setmode; /*set mode client*/
 	ros::Subscriber state_sub;
 
         mavros_msgs::CommandTOL srv_takeoff; /*takeoff object*/
         mavros_msgs::CommandBool arm_cmd; /*arm object*/
         mavros_msgs::SetMode offb_set_mode; /*set mode object*/
         geometry_msgs::PoseStamped pose ;/*position object*/
-
 	mavros_msgs::State current_state;
 
         int MAV_ID;
-        std::string mavlink_topic,arm_clint,takeoff_clint,position_topic,setmode_clint,state_topic;
+        std::string mavlink_topic,arm_clint,setmode_clint,takeoff_clint,position_topic,state_topic;
         /*take off*/
-        void home(void);
-        void start(void);
-        void set_mode(void);
-        void arm(void);
-        void takeoff(void);
-        void state_cb(const mavros_msgs::State::ConstPtr& msg);
 
     public:
       void MAV_takeoff(void);
       void MAV_land(void);
+      void state_cb(const mavros_msgs::State::ConstPtr& msg);
       Takeoff(ros::NodeHandle *nh,int UAV_ID);
 
 };

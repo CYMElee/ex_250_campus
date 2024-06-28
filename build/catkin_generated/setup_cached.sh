@@ -7,7 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/noetic/lib:/home/lee/workspace/tools/PX4-Autopilot/build/px4_sitl_default/build_gazebo-classic'
-export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
+export CMAKE_PREFIX_PATH="/home/lee/workspace/ROS_ws/ex_250_campus/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/lee/workspace/ROS_ws/ex_250_campus/devel/lib:$LD_LIBRARY_PATH"
+export PATH='/opt/ros/noetic/bin:/usr/local/MATLAB/R2023b/bin/:/home/lee/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+export PKG_CONFIG_PATH="/home/lee/workspace/ROS_ws/ex_250_campus/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/lee/workspace/ROS_ws/ex_250_campus/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/lee/workspace/ROS_ws/ex_250_campus/devel/share/common-lisp'
 export ROS_PACKAGE_PATH='/home/lee/workspace/ROS_ws/ex_250_campus/src:/opt/ros/noetic/share'
