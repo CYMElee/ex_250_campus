@@ -168,19 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-demo/CMakeFiles/fly.dir/rule:
-	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f CMakeFiles/Makefile2 demo/CMakeFiles/fly.dir/rule
-.PHONY : demo/CMakeFiles/fly.dir/rule
+demo/CMakeFiles/main.dir/rule:
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f CMakeFiles/Makefile2 demo/CMakeFiles/main.dir/rule
+.PHONY : demo/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-fly: demo/CMakeFiles/fly.dir/rule
+main: demo/CMakeFiles/main.dir/rule
 
-.PHONY : fly
+.PHONY : main
 
 # fast build rule for target.
-fly/fast:
-	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/build
-.PHONY : fly/fast
+main/fast:
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/main.dir/build.make demo/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 # Convenience name for target.
 demo/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
@@ -722,32 +722,32 @@ actionlib_msgs_generate_messages_lisp/fast:
 	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make demo/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
-node/fly.o: node/fly.cpp.o
+node/main.o: node/main.cpp.o
 
-.PHONY : node/fly.o
+.PHONY : node/main.o
 
 # target to build an object file
-node/fly.cpp.o:
-	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/node/fly.cpp.o
-.PHONY : node/fly.cpp.o
+node/main.cpp.o:
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/main.dir/build.make demo/CMakeFiles/main.dir/node/main.cpp.o
+.PHONY : node/main.cpp.o
 
-node/fly.i: node/fly.cpp.i
+node/main.i: node/main.cpp.i
 
-.PHONY : node/fly.i
+.PHONY : node/main.i
 
 # target to preprocess a source file
-node/fly.cpp.i:
-	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/node/fly.cpp.i
-.PHONY : node/fly.cpp.i
+node/main.cpp.i:
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/main.dir/build.make demo/CMakeFiles/main.dir/node/main.cpp.i
+.PHONY : node/main.cpp.i
 
-node/fly.s: node/fly.cpp.s
+node/main.s: node/main.cpp.s
 
-.PHONY : node/fly.s
+.PHONY : node/main.s
 
 # target to generate assembly for a file
-node/fly.cpp.s:
-	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/node/fly.cpp.s
-.PHONY : node/fly.cpp.s
+node/main.cpp.s:
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/main.dir/build.make demo/CMakeFiles/main.dir/node/main.cpp.s
+.PHONY : node/main.cpp.s
 
 src/takeoff.o: src/takeoff.cpp.o
 
@@ -755,7 +755,7 @@ src/takeoff.o: src/takeoff.cpp.o
 
 # target to build an object file
 src/takeoff.cpp.o:
-	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/src/takeoff.cpp.o
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/main.dir/build.make demo/CMakeFiles/main.dir/src/takeoff.cpp.o
 .PHONY : src/takeoff.cpp.o
 
 src/takeoff.i: src/takeoff.cpp.i
@@ -764,7 +764,7 @@ src/takeoff.i: src/takeoff.cpp.i
 
 # target to preprocess a source file
 src/takeoff.cpp.i:
-	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/src/takeoff.cpp.i
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/main.dir/build.make demo/CMakeFiles/main.dir/src/takeoff.cpp.i
 .PHONY : src/takeoff.cpp.i
 
 src/takeoff.s: src/takeoff.cpp.s
@@ -773,7 +773,7 @@ src/takeoff.s: src/takeoff.cpp.s
 
 # target to generate assembly for a file
 src/takeoff.cpp.s:
-	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/src/takeoff.cpp.s
+	cd /home/lee/workspace/ROS_ws/ex_250_campus/build && $(MAKE) -f demo/CMakeFiles/main.dir/build.make demo/CMakeFiles/main.dir/src/takeoff.cpp.s
 .PHONY : src/takeoff.cpp.s
 
 src/topic_tool.o: src/topic_tool.cpp.o
@@ -813,7 +813,7 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
-	@echo "... fly"
+	@echo "... main"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_lisp"
@@ -853,9 +853,9 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_lisp"
-	@echo "... node/fly.o"
-	@echo "... node/fly.i"
-	@echo "... node/fly.s"
+	@echo "... node/main.o"
+	@echo "... node/main.i"
+	@echo "... node/main.s"
 	@echo "... src/takeoff.o"
 	@echo "... src/takeoff.i"
 	@echo "... src/takeoff.s"

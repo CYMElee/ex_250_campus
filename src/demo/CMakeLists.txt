@@ -139,7 +139,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 #add_executable(takeoff src/takeoff.cpp)
 add_executable(topic_tool src/topic_tool.cpp)
-add_executable(fly node/fly.cpp
+add_executable(main node/main.cpp
                       src/takeoff.cpp)
 
 
@@ -157,7 +157,7 @@ add_executable(fly node/fly.cpp
 target_link_libraries(topic_tool
   ${catkin_LIBRARIES}
 )
-target_link_libraries(fly
+target_link_libraries(main
   ${catkin_LIBRARIES}
 )
 

@@ -285,17 +285,17 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named fly
+# Target rules for targets named main
 
 # Build rule for target.
-fly: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 fly
-.PHONY : fly
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-fly/fast:
-	$(MAKE) -f demo/CMakeFiles/fly.dir/build.make demo/CMakeFiles/fly.dir/build
-.PHONY : fly/fast
+main/fast:
+	$(MAKE) -f demo/CMakeFiles/main.dir/build.make demo/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_generate_messages_nodejs
@@ -787,7 +787,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... fly"
+	@echo "... main"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_lisp"

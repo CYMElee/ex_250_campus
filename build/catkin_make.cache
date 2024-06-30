@@ -1,2 +1,2 @@
 demo
--DCATKIN_DEVEL_PREFIX=/home/lee/workspace/ROS_ws/ex_250_campus/devel -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ROS_ws/ex_250_campus/install -G Unix Makefiles
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/lee/workspace/ROS_ws/ex_250_campus/devel -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ROS_ws/ex_250_campus/install -G Unix Makefiles
